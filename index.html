@@ -1,82 +1,162 @@
-HB. 
-About
-Experience
-Skills
-Projects
-Contact
-☾
-BSc Information Technology · North-West University
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heindrich Burger | IT Portfolio</title>
+  <meta name="description" content="Portfolio and virtual CV of Heindrich Burger, BSc Information Technology student at North-West University." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-Heindrich
-Burger
-Building functional, efficient systems — and the teams that run them.
+  <!-- ===== Navigation ===== -->
+  <header class="nav-wrap">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#home">HB<span class="brand-dot">.</span></a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="theme-toggle" aria-label="Switch colour theme">☾</button></li>
+      </ul>
+    </nav>
+  </header>
 
-Download CV Get in touch
-heindrich@nwu:~
-$ whoami
+  <!-- ===== Hero with terminal ===== -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">BSc Information Technology · North-West University</p>
+      <h1>Heindrich<br />Burger</h1>
+      <p class="lede">Building functional, efficient systems — and the teams that run them.</p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="cv.pdf" download>Download CV</a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
 
-$ ▊
+    <div class="terminal" aria-hidden="true">
+      <div class="terminal-bar">
+        <span class="t-dot"></span><span class="t-dot"></span><span class="t-dot"></span>
+        <span class="terminal-title">heindrich@nwu:~</span>
+      </div>
+      <div class="terminal-body">
+        <p><span class="prompt">$</span> whoami</p>
+        <p id="type-line" class="type-line"></p>
+        <p class="cursor-line"><span class="prompt">$</span> <span class="cursor">▊</span></p>
+      </div>
+    </div>
+  </section>
 
-01 About me
-I'm a part-time BSc Information Technology student at North-West University in Potchefstroom. Four years into the degree, my focus has grown around business management, systems analysis, and building functional, efficient systems that people actually want to use.
+  <!-- ===== About ===== -->
+  <section id="about" class="section reveal">
+    <h2><span class="sec-num">01</span> About me</h2>
+    <div class="about-grid">
+      <p>
+        I'm a part-time BSc Information Technology student at North-West University in
+        Potchefstroom. Four years into the degree, my focus has grown around business
+        management, systems analysis, and building functional, efficient systems that
+        people actually want to use.
+      </p>
+      <p>
+        Outside the classroom I was elected to the Villagers Men's Residence house
+        committee, running the Finance portfolio — an experience that sharpened my
+        leadership and communication skills and earned me additional certificates in
+        marketing, finance, and crisis management.
+      </p>
+    </div>
+  </section>
 
-Outside the classroom I was elected to the Villagers Men's Residence house committee, running the Finance portfolio — an experience that sharpened my leadership and communication skills and earned me additional certificates in marketing, finance, and crisis management.
+  <!-- ===== Experience ===== -->
+  <section id="experience" class="section reveal">
+    <h2><span class="sec-num">02</span> Experience</h2>
+    <div class="timeline">
+      <article class="t-item">
+        <div class="t-when">2023 – 2024</div>
+        <div class="t-what">
+          <h3>House Committee — Finance Portfolio</h3>
+          <p class="t-org">NWU Villagers Men's Residence</p>
+          <p>Ran residence finances end-to-end: budgeting, ensuring stable income, and responsible use of funds for a full residence community.</p>
+        </div>
+      </article>
+      <article class="t-item">
+        <div class="t-when">2020 – 2023</div>
+        <div class="t-what">
+          <h3>IT Support (Holiday work)</h3>
+          <p class="t-org">GP Brokers</p>
+          <p>Troubleshooting hardware and software problems for a financial advisory office — diagnosing issues fast and keeping systems running.</p>
+        </div>
+      </article>
+      <article class="t-item">
+        <div class="t-when">2018 – 2019</div>
+        <div class="t-what">
+          <h3>Administration (Holiday work)</h3>
+          <p class="t-org">Endecon Ubuntu</p>
+          <p>Streamlined administration and supported consulting work at an engineering consultancy.</p>
+        </div>
+      </article>
+      <article class="t-item">
+        <div class="t-when">2021 – now</div>
+        <div class="t-what">
+          <h3>BSc Information Technology</h3>
+          <p class="t-org">School of Computer Science &amp; Information Systems, North-West University</p>
+          <p>Matriculated at Bergsig Academy (2020) before starting the degree.</p>
+        </div>
+      </article>
+    </div>
+  </section>
 
-02 Experience
-2023 – 2024
-House Committee — Finance Portfolio
-NWU Villagers Men's Residence
+  <!-- ===== Skills ===== -->
+  <section id="skills" class="section reveal">
+    <h2><span class="sec-num">03</span> Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card"><h3>Systems</h3><ul><li>Systems development</li><li>Systems analysis</li><li>Data analytics</li></ul></div>
+      <div class="skill-card"><h3>Business</h3><ul><li>Business management</li><li>Finance</li><li>Digital marketing</li></ul></div>
+      <div class="skill-card"><h3>People</h3><ul><li>Leadership</li><li>Teamwork</li><li>Communication</li></ul></div>
+      <div class="skill-card"><h3>Ways of working</h3><ul><li>Critical thinking</li><li>Time management</li><li>Crisis management</li></ul></div>
+    </div>
+    <p class="langs">Languages: English (fluent) · Afrikaans (fluent)</p>
+  </section>
 
-Ran residence finances end-to-end: budgeting, ensuring stable income, and responsible use of funds for a full residence community.
+  <!-- ===== Projects ===== -->
+  <section id="projects" class="section reveal">
+    <h2><span class="sec-num">04</span> Projects</h2>
+    <div class="projects-grid">
+      <article class="project-card">
+        <h3>Virtual CV — this website</h3>
+        <p>A hand-coded portfolio built with HTML, CSS and JavaScript, hosted on GitHub Pages. Features a typed terminal intro, dark mode, and scroll-triggered animations.</p>
+        <a class="proj-link" href="https://github.com/YOURUSERNAME/YOURUSERNAME.github.io" target="_blank" rel="noopener">View code →</a>
+      </article>
+      <article class="project-card">
+        <h3>Coming soon</h3>
+        <p>More university and personal projects are on their way to my GitHub profile.</p>
+        <a class="proj-link" href="https://github.com/YOURUSERNAME" target="_blank" rel="noopener">Visit my GitHub →</a>
+      </article>
+    </div>
+  </section>
 
-2020 – 2023
-IT Support (Holiday work)
-GP Brokers
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="section reveal">
+    <h2><span class="sec-num">05</span> Contact</h2>
+    <p class="contact-lede">Open to graduate opportunities, internships, and interesting problems.</p>
+    <div class="contact-row">
+      <a class="btn btn-solid" href="mailto:heindrichburger84@gmail.com">Email me</a>
+      <a class="btn btn-ghost" href="https://github.com/YOURUSERNAME" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/YOURLINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
 
-Troubleshooting hardware and software problems for a financial advisory office — diagnosing issues fast and keeping systems running.
+  <footer class="footer">
+    <p>© <span id="year"></span> Heindrich Burger · Built by hand with HTML, CSS &amp; JavaScript · Hosted on GitHub Pages</p>
+  </footer>
 
-2018 – 2019
-Administration (Holiday work)
-Endecon Ubuntu
-
-Streamlined administration and supported consulting work at an engineering consultancy.
-
-2021 – now
-BSc Information Technology
-School of Computer Science & Information Systems, North-West University
-
-Matriculated at Bergsig Academy (2020) before starting the degree.
-
-03 Skills
-Systems
-Systems development
-Systems analysis
-Data analytics
-Business
-Business management
-Finance
-Digital marketing
-People
-Leadership
-Teamwork
-Communication
-Ways of working
-Critical thinking
-Time management
-Crisis management
-Languages: English (fluent) · Afrikaans (fluent)
-
-04 Projects
-Virtual CV — this website
-A hand-coded portfolio built with HTML, CSS and JavaScript, hosted on GitHub Pages. Features a typed terminal intro, dark mode, and scroll-triggered animations.
-
-View code →
-Coming soon
-More university and personal projects are on their way to my GitHub profile.
-
-Visit my GitHub →
-05 Contact
-Open to graduate opportunities, internships, and interesting problems.
-
-Email me GitHub LinkedIn
-© Heindrich Burger · Built by hand with HTML, CSS & JavaScript · Hosted on GitHub Pages
+  <script src="script.js"></script>
+</body>
+</html>
