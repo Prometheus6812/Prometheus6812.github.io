@@ -1,15 +1,15 @@
 /* =========================================================
-   Heindrich Burger — cmpg323 /37818430
-  
+   Heindrich Burger — Portfolio stylesheet
+   Palette: deep navy / slate blue / steel grey / mist
    ========================================================= */
  
 :root {
-  --ink: #16212f;        
-  --navy: #1f3a5f;       
-  --steel: #6e8ca8;      
-  --mist: #eef2f6;       
-  --paper: #ffffff;     
-  --accent: #4f8fcb;     
+  --ink: #16212f;        /* deep navy — headings, dark surfaces */
+  --navy: #1f3a5f;       /* primary blue */
+  --steel: #6e8ca8;      /* muted steel blue */
+  --mist: #eef2f6;       /* light grey background */
+  --paper: #ffffff;      /* cards */
+  --accent: #4f8fcb;     /* bright blue accent */
   --text: #2a3644;
   --term-bg: #101923;
   --term-green: #8fd3a6;
@@ -351,4 +351,3 @@ body.dark .btn-solid { color: #101923; }
   .hero h1, .lede, .hero-actions, .terminal { animation: none; }
   .reveal { opacity: 1; transform: none; transition: none; }
 }
- 
