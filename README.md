@@ -2,7 +2,7 @@
 
 My personal portfolio website, built as a virtual CV and hosted on **GitHub Pages**.
 
-🔗 **Live site:** https://YOURUSERNAME.github.io
+🔗 **Live site:** https://Prometheus6812.github.io
 
 ## About
 
