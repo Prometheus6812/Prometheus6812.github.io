@@ -4,7 +4,7 @@ My personal portfolio website, built as a virtual CV and hosted on **GitHub Page
 
 🔗 **Live site:** https://Prometheus6812.github.io
 
-## About
+## About 
 
 This site is my online CV. It introduces who I am, my experience, skills, and projects, and lets visitors download my full CV as a PDF or reach me directly.
 
