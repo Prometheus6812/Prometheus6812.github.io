@@ -351,3 +351,70 @@ body.dark .btn-solid { color: #101923; }
   .hero h1, .lede, .hero-actions, .terminal { animation: none; }
   .reveal { opacity: 1; transform: none; transition: none; }
 }
+
+/* ===== Tech Stack section ===== */
+.stack-intro { color: var(--steel); margin-bottom: 1.75rem; max-width: 55ch; }
+
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem 2.5rem;
+}
+
+.stack-item { display: flex; flex-direction: column; }
+
+.stack-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.stack-badge {
+  display: inline-block;
+  font-weight: 700;
+  font-family: "Space Grotesk", sans-serif;
+  color: #fff;
+  background: var(--c, var(--navy));
+  padding: 0.2rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.stack-level {
+  font-size: 0.8rem;
+  color: var(--steel);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.stack-bar {
+  width: 100%;
+  height: 10px;
+  background: color-mix(in srgb, var(--steel) 25%, transparent);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.stack-fill {
+  display: block;
+  height: 100%;
+  width: 0;                       /* starts at 0, animates to data-width */
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), var(--navy));
+  transition: width 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+body.dark .stack-fill {
+  background: linear-gradient(90deg, var(--accent), #9dc1e8);
+}
+
+.stack-note { font-size: 0.85rem; color: var(--text); margin-top: 0.45rem; }
+
+.stack-also {
+  margin-top: 1.75rem;
+  color: var(--steel);
+  font-size: 0.95rem;
+}
+.stack-also strong { color: var(--accent); font-weight: 600; }
