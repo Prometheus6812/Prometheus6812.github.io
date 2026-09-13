@@ -49,6 +49,10 @@ const revealObserver = new IntersectionObserver(
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("visible");
+        // Animate any tech-stack bars inside this section
+        entry.target.querySelectorAll(".stack-fill").forEach((bar) => {
+          bar.style.width = bar.getAttribute("data-width");
+        });
         revealObserver.unobserve(entry.target);
       }
     });
